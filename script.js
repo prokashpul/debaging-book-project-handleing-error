@@ -123,6 +123,7 @@ const addToWishlist = (id) => {
 };
 
 const displayCart = () => {
+  // first empty cart 
   document.getElementById("cart").innerHTML = ''
   const cart = getCartItems();
   cart.forEach((book) => {
@@ -135,8 +136,6 @@ const displayWishlist = () => {
   // first empty wishlist
   document.getElementById("wishlist").innerHTML = '';
   const wishlist = getWishlistItems();
-  console.log(wishlist);
-
   wishlist.forEach((book) => {
     const div = createCard(book);
     document.getElementById("wishlist").appendChild(div);
