@@ -113,7 +113,6 @@ showBooks(bookList);
 
 const addToCart = (id) => {
   cart.push(id);
-  console.log('hello')
 };
 
 const addToWishlist = (id) => {
